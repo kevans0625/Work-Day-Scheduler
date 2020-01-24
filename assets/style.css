@@ -36,7 +36,8 @@ body {
     border-bottom: none;
     border-left: none;
     color: whitesmoke;
-} //event tense color 
+} 
+
 .past {
     background-color: rgb(128, 55, 0);
 }
@@ -45,22 +46,22 @@ body {
     background-color: gray;
 }
 
-// Small devices (landscape phones, 576px and up)
+
 @media (min-width: 576px) {
-    ...
+
 }
 
-// Medium devices (tablets, 768px and up)
+
 @media (min-width: 768px) {
-    ...
+  
 }
 
-// Large devices (desktops, 992px and up)
+
 @media (min-width: 992px) {
-    ...
+
 }
 
-// Extra large devices (large desktops, 1200px and up)
+
 @media (min-width: 1200px) {
-    ...
+  
 }
