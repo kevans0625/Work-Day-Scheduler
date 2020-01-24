@@ -1,20 +1,66 @@
-* {
+*, ::after, ::before {
     box-sizing: border-box;
-  }
+}
 
 body {
     background-color: #333;
     color: aliceblue;
-  }
+}
 
-  .jumbotron {
+.row {
+    display: inline;
+    margin: 0;
+}
+
+.jumbotron {
     text-align: center;
-    background-color:teal;
-    border-style: outset;
-    border-color: teal;
-    border-width: 10px;
-    margin-bottom: 25px;
-  }
+    background-color: teal;
+    margin-bottom: 75px;
+}
+
+.input-group {
+    margin: 0px;
+    height: 40px;
+
+}
+
+.btn {
+    margin: 0px;
+    width: 100px;
+}
 
 
-  
+.btn-lock {
+    margin: 0px;
+    background-color: rgb(128, 55, 0);
+    border-bottom: none;
+    border-left: none;
+    color: whitesmoke;
+} //event tense color 
+.past {
+    background-color: rgb(128, 55, 0);
+}
+
+.future {
+    background-color: gray;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    ...
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    ...
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    ...
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    ...
+}

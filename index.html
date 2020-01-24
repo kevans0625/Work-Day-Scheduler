@@ -1,32 +1,193 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Work Day Scheduler</title>
-  </head>
-  <body>
+</head>
+
+<body>
+
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Work Day Scheduler</h1>
-          <p class="lead">This is a simple calendar application that allows the user to save events for each hour of the day.</p>
-            <p class="current date">Current Date Text</p>
+            <h1 class="display-4">Work Day Scheduler</h1>
+            <p class="lead">This is a simple calendar application that allows the user to save events for each hour
+                of the day.</p>
+            <h4 class="current date">Current Date Text</h4>
         </div>
-      </div>
+    </div>
 
     <div class="container">
+
         <div class="row">
-          <div class="col-sm">
-            One of three columns
-          </div>
-        </div>
-      </div>
+            <div class="input-group ">
+                <div class="input-group-prepend">
+                    <p class="btn btn-outline-secondary btn-time" type="text">8am</p>
+                </div>
+                <div class="custom-file">
+                    <input type="text" class="form-control" placeholder="Event Info" aria-label="Event Info"
+                        aria-describedby="basic-addon2">
+                </div>
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary btn-info btn-lock fa fa-check" type="button"></button>
+                </div>
+            </div>
+            <!-- Row 1-->
+            <div class="row">
+                <div class="input-group ">
+                    <div class="input-group-prepend">
+                        <p class="btn btn-outline-secondary btn-time" type="text">9am</p>
+                    </div>
+                    <div class="custom-file">
+                        <input type="text" class="form-control" placeholder="Event Info" aria-label="Event Info"
+                            aria-describedby="basic-addon2">
+                    </div>
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary btn-info btn-lock fa fa-check" type="button"></button>
+                    </div>
+                </div>
+                <!-- Row 2-->
+                <div class="row">
+                    <div class="input-group ">
+                        <div class="input-group-prepend">
+                            <p class="btn btn-outline-secondary" type="text">10am</p>
+                        </div>
+                        <div class="custom-file">
+                            <input type="text" class="form-control" placeholder="Event Info" aria-label="Event Info"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary btn-info btn-lock fa fa-check"
+                                type="button"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 3-->
+                <div class="row">
+                    <div class="input-group ">
+                        <div class="input-group-prepend">
+                            <p class="btn btn-outline-secondary" type="text">11am</p>
+                        </div>
+                        <div class="custom-file">
+                            <input type="text" class="form-control" placeholder="Event Info" aria-label="Event Info"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary btn-info btn-lock fa fa-check"
+                                type="button"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 4-->
+                <div class="row">
+                    <div class="input-group ">
+                        <div class="input-group-prepend">
+                            <p class="btn btn-outline-secondary" type="text">12pm</p>
+                        </div>
+                        <div class="custom-file">
+                            <input type="text" class="form-control" placeholder="Event Info" aria-label="Event Info"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary btn-info btn-lock fa fa-check"
+                                type="button"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 5-->
+                <div class="row">
+                    <div class="input-group ">
+                        <div class="input-group-prepend">
+                            <p class="btn btn-outline-secondary" type="text">1pm</p>
+                        </div>
+                        <div class="custom-file">
+                            <input type="text" class="form-control" placeholder="Event Info" aria-label="Event Info"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary btn-info btn-lock fa fa-check"
+                                type="button"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 6-->
+                <div class="row">
+                    <div class="input-group ">
+                        <div class="input-group-prepend">
+                            <p class="btn btn-outline-secondary" type="text">2pm</p>
+                        </div>
+                        <div class="custom-file">
+                            <input type="text" class="form-control" placeholder="Event Info" aria-label="Event Info"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary btn-info btn-lock fa fa-check"
+                                type="button"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 7-->
+                <div class="row">
+                    <div class="input-group ">
+                        <div class="input-group-prepend">
+                            <p class="btn btn-outline-secondary" type="text">3pm</p>
+                        </div>
+                        <div class="custom-file">
+                            <input type="text" class="form-control" placeholder="Event Info" aria-label="Event Info"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary btn-info btn-lock fa fa-check"
+                                type="button"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 8-->
+                <div class="row">
+                    <div class="input-group ">
+                        <div class="input-group-prepend">
+                            <p class="btn btn-outline-secondary" type="text">4pm</p>
+                        </div>
+                        <div class="custom-file">
+                            <input type="text" class="form-control" placeholder="Event Info" aria-label="Event Info"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary btn-info btn-lock fa fa-check"
+                                type="button"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 9-->
+                <div class="row">
+                    <div class="input-group ">
+                        <div class="input-group-prepend">
+                            <p class="btn btn-outline-secondary" type="text">5pm</p>
+                        </div>
+                        <div class="custom-file">
+                            <input type="text" class="form-control" placeholder="Event Info" aria-label="Event Info"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary btn-info btn-lock fa fa-check"
+                                type="button"></button>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- JavaScript -->
+            </div>
 
-    </body>
+            <!-- JavaScript -->
+
+</body>
+
 </html>
