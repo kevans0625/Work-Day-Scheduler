@@ -20,16 +20,28 @@ body {
 
 .input-group {
     margin: 0px;
-    height: 40px;
-
+   
+}
+.form-control {
+    height: 60px;
+}
+.custom-file {
+ height: 60px;
 }
 
+.btn-time{
+    font-size: 18px;
+ 
+}
 .btn {
     margin: 0px;
     width: 100px;
 }
 
-
+.form-control-lg{
+    height: 1000px!important;
+    padding: 0;
+}
 .btn-lock {
     margin: 0px;
     background-color: rgb(128, 55, 0);
@@ -44,24 +56,4 @@ body {
 
 .future {
     background-color: gray;
-}
-
-
-@media (min-width: 576px) {
-
-}
-
-
-@media (min-width: 768px) {
-  
-}
-
-
-@media (min-width: 992px) {
-
-}
-
-
-@media (min-width: 1200px) {
-  
 }
