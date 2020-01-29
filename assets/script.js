@@ -95,6 +95,18 @@ $(".btnLock").on("click", function() {
         $(".input8").text($(this).text());
 });
 
+function displayIt(){
+    $("#9am").append(localStorage.getItem('event1'))
+    $("#10am").append(localStorage.getItem('event2'))
+    $("#11am").append(localStorage.getItem('event3'))
+    $("#12pm").append(localStorage.getItem('event4'))
+    $("#1pm").append(localStorage.getItem('event5'))
+    $("#2pm").append(localStorage.getItem('event6'))
+    $("#3pm").append(localStorage.getItem('event7'))
+    $("#4pm").append(localStorage.getItem('event8'))
+    $("#5pm").append(localStorage.getItem('event9'))
+ } displayIt()
+
 
 $(".btnLock").on("click", function() {
     //save to storage
