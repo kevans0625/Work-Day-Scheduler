@@ -22,11 +22,16 @@ body {
     margin: 0px;
    
 }
+.time {
+    justify-content: center;
+    font: 20px bold;
+    padding: 30px 0px 10px 0px;
+}
 .form-control {
-    height: 60px;
+    height: 85px;
 }
 .custom-file {
- height: 60px;
+ height: 85px;
 }
 
 .btn-time{
