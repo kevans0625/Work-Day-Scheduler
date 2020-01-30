@@ -5,38 +5,18 @@ $(document).ready(function() {
    
 // display current day Day, Month
 //create variable for current date
-var displayDate = $(".currentdate");
+var displayDate = $(".currentdate").text(date);
 //create function 
 var date = moment().format("dddd[, ] MMM Do YYYY");
 // Set Time \\
+//create the text and append to display
 //create to format time
 var time = moment().format('h:mm a');
 //create variable for current time
-var displayTime = $(".currenttime");
-var eventTime = $("btn-time");
+var displayTime =  $(".currenttime").text(time);
+var eventTime = $("btn-time").value;
 
- // Set Current Time 
-function currentDate() { 
-    //create the text and append to display 
-    $(".currentdate").text(date);
-
-    
-}
-currentDate()
-
-// Current Time
-function setTime() { 
-    
-    //create the text and append to display
-    $(".currenttime").text(time);
-}
-setTime()
-
-
-
-
-
-
+console.log(eventTime);
 // When form is submitted... //works but does grab value
 $(".btnLock").on("click", function(e) {
     e.preventDefault();
@@ -48,10 +28,6 @@ $(".btnLock").on("click", function(e) {
         //pull from storage
         console.log($("this").closest("input").append(eventList))
     });
-
-    var eventText = localStorage.getItem("events");
-   console.log(eventText)
-   $(".input1").append(eventText)
     
 $(".btnLock").on("click", function() {
     //save to storage 
@@ -95,7 +71,17 @@ $(".btnLock").on("click", function() {
         $(".input8").text($(this).text());
 });
 
+$(".btnLock").on("click", function() {
+    //save to storage
+    localStorage.setItem("event9", $(".input9").val());
+        $(".input9").text($(this).text());
+    });
+    
+//display storage item by getting the itme and appending it
 function displayIt(){
+    if(localStorage === null){
+        return 
+    }
     $("#9am").append(localStorage.getItem('event1'))
     $("#10am").append(localStorage.getItem('event2'))
     $("#11am").append(localStorage.getItem('event3'))
@@ -108,12 +94,22 @@ function displayIt(){
  } displayIt()
 
 
-$(".btnLock").on("click", function() {
-    //save to storage
-    localStorage.setItem("event9", $(".input9").val());
-        $(".input9").text($(this).text());
-    //display storage item
-   
-});
+//change cell color storage item by getting the itme and appending it
+
+function eventTime(){
+    if ($("textarea") === ""){
+        return 
+    } else if (displayTime === "6:35 PM"){
+        $("#5pm").closest("textarea").addclass("present");
+        console.log("we did it!")
+    } else if (displayTime < $("p").value){
+        $("p").closest("textarea").addclass("past");
+
+    }
+}eventTime()
+
+
+
+
 
 });
