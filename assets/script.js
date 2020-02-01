@@ -18,8 +18,6 @@ $(document).ready(function() {
     function currentDate() { 
         //create the text and append to display 
         $(".currentdate").text(date);
-    
-    
     }
     currentDate()
 
@@ -36,10 +34,21 @@ $(document).ready(function() {
         console.log(hourTime)
     })
 
+//display storage item by getting the key for the value of it
+    function displayIt(){
+       $("#textBox1").val(localStorage.getItem("1"));
+        $("#textBox2").val(localStorage.getItem("2"));
+        $("#textBox3").val(localStorage.getItem("3"));
+        $("#textBox4").val(localStorage.getItem("4"));
+        $("#textBox5").val(localStorage.getItem("5"));
+        $("#textBox6").val(localStorage.getItem("6"));
+        $("#textBox7").val(localStorage.getItem("7"));
+        $("#textBox8").val(localStorage.getItem("8"));
+        $("#textBox9").val(localStorage.getItem("9"));
+    } displayIt();
 
  
         
-    //display storage item by getting the itme and appending it
    
     //change cell color storage item by getting the itme and appending it
     
