@@ -36,24 +36,47 @@ $(document).ready(function() {
 
 //display storage item by getting the key for the value of it
     function displayIt(){
-       $("#textBox1").val(localStorage.getItem("1"));
-        $("#textBox2").val(localStorage.getItem("2"));
-        $("#textBox3").val(localStorage.getItem("3"));
-        $("#textBox4").val(localStorage.getItem("4"));
-        $("#textBox5").val(localStorage.getItem("5"));
-        $("#textBox6").val(localStorage.getItem("6"));
-        $("#textBox7").val(localStorage.getItem("7"));
-        $("#textBox8").val(localStorage.getItem("8"));
-        $("#textBox9").val(localStorage.getItem("9"));
-    } displayIt();
+       $("#textBox-9").val(localStorage.getItem("1"));
+        $("#textBox-10").val(localStorage.getItem("2"));
+        $("#textBox-11").val(localStorage.getItem("3"));
+        $("#textBox-12").val(localStorage.getItem("4"));
+        $("#textBox-13").val(localStorage.getItem("5"));
+        $("#textBox-14").val(localStorage.getItem("6"));
+        $("#textBox-15").val(localStorage.getItem("7"));
+        $("#textBox-16").val(localStorage.getItem("8"));
+        $("#textBox-17").val(localStorage.getItem("9"));
+    } 
+    
+    displayIt();
 
  
         
    
-    //change cell color storage item by getting the itme and appending it
-    
+    //change cell color storage item by getting the time and appending it
+     function cellstatus(){
+
+        $(".form-control").each(function(){
+            let textHour = $(this).attr("id").split("-")[1];
+            let currentHour = moment().hours();
+            
+            if (textHour < currentHour){
+                $(this).addClass("past");
+            } else if (textHour == currentHour){
+                $(this).removeClass("past");
+                $(this).addClass("present");
+            } else {
+                $(this).removeClass("past");
+                $(this).removeClass("present");
+                $(this).addClass("future");
+
+            }
+        })
+
+     } 
+     
+     cellstatus()
 
     
     
     
-    });
+});

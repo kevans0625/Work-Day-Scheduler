@@ -30,10 +30,28 @@ body {
 .form-control {
     height: 85px;
 }
-.custom-file {
+textarea {
  height: 85px;
 }
+.past{
+    background-color:rgb(220,20,60)!important;
+    color: white;
+    
+}
+.present{
+    background-color: orange !important;
+    color: white;
+}
 
+.past1{
+    background-color:#DFBBB1!important;
+    color: white;
+    
+}
+.present2 {
+    background-color: #44022F !important;
+    color: white;
+}
 .btn-time{
     font-size: 18px;
  
@@ -55,9 +73,6 @@ body {
     color: whitesmoke;
 } 
 
-.past {
-    background-color: rgb(128, 55, 0);
-}
 
 .future {
     background-color: gray;
